@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:psql postgresql://ep-icy-bird-a16b9fib-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+    url: jdbc:postgresql://ep-icy-bird-a16b9fib-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
     username: neondb_owner
     password: npg_lHdM54mqAVJr
 
