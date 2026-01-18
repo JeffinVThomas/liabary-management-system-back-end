@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: LibraryManagement
+
+  # MySQL Database Configuration
+  datasource:
+    url: jdbc:mysql://localhost:3306/Library_Management_DB?createDatabaseIfNotExist=true
+    username: root
+    password: admin
+
+  # JPA & Hibernate Configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+# Twilio SMS Configuration
+twilio:
+  account:
+    sid: AC45cd6aabea1afa4a47c063977a0c27b6
+  auth:
+    token: a7d58fbc76256306e2d0c0e3b9e9db51
+  phone:
+    number: "+12177946549"
+
+# JWT Configuration
+jwt:
+  secret: "s3cUr3_JwT_K3y_f0r_L1br@ry_App_987654321!"
+
+  profiles:
+    active: prod

@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: false
+        format_sql: false
+
+# Production API Credentials (Pulled from Render Environment Variables)
+twilio:
+  account:
+    sid: ${TWILIO_SID}
+  auth:
+    token: ${TWILIO_TOKEN}
+  phone:
+    number: ${TWILIO_PHONE}
+
+jwt:
+  secret: ${JWT_SECRET}
